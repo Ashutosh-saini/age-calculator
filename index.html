@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>Age Calculator</h1>
+      <h3>Calculate age from date of birth and current date</h3>
+    </header>
+    <section>
+      <div class="inside-section">
+        <div class="main">
+          <div class="birthDate">
+            <p>Date of birth:</p>
+            <select id="month" name="month">
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+            <input id="dob" type="number" min="1" max="31" placeholder="31"/>
+            <input id="doby" type="number" min="1" placeholder="year" />
+          </div>
+
+          <div class="ageDate">
+            <p>Age at the date of:</p>
+            <select id="calculateMonth" name="Calculatemonth">
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+            <input id="calculateDate" type="number" min="1" max="31" placeholder="21" />
+            <input id="calculateYear" type="number" min="1" placeholder="year"/>
+          </div>
+          <div class="buttons">
+            <button onclick="ageCalculate()" type="submit" class="btn-1">Calculate</button>
+            <button onclick="refresh()" id="reset" type="submit" class="btn-2">Reset</button>
+          </div>
+          <p>
+              Age result:
+          </p>
+          <div id="result">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
